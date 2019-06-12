@@ -1,0 +1,40 @@
+{% extends 'blog/basic.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-8 blog-main">
+            <h1 class="pb-4 mb-2 ">
+                {{post.title}}
+            </h1>
+            <div class="blog-post">
+                <h5 class="blog-post-meta font-italic">{{post.pub_date}}</h5>
+                <h2 class="blog-post-title">{{post.head0}}</h2>
+                <p>{{post.chead0}}</p>
+                <h3>{{post.head1}}</h3>
+                <p>{{post.chead1}}</p>
+                <h3>{{post.head2}}</h3>
+                <p>{{post.chead2}}</p>           
+            </div><!-- /.blog-post -->
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+            <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">My Awesome Cart <em>started out as a small project and is now</em> the fastest growing e-commerce stores of all times in india and abroad.</p>
+            </div>
+
+            <div class="p-4">
+                <h4 class="font-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+
+    </div>
+</div>
+
+{% endblock %}
